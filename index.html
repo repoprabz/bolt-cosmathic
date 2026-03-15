@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-869TEY1J33"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-869TEY1J33');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Boost your trading with cosmic mathematics & planetary astro based A-I predictions. Achieve a 70%+ win rate with advanced & intuitive tools. Try Cosmathic AI for FREE!">
+    <meta name="keywords" content="trading indicators, trading signals, technical analysis, trading automation, astro trading, planetary trading predictions, algorithmic trading, algo trading, AI powered trading, stock market forecasting, AI trading tools, free trading signals, high win-rate strategy, Crypto trading signals, Financial astrology, Market timing strategies, Investment signals, Automated trading software">
+    <meta property="og:title" content="Cosmathic - Premium Trading Tools">
+    <meta property="og:description" content="Get 70%+ win-rate with our intuitive trading tools. Try it for FREE!">
+    <meta property="og:type" content="website">
+    <link rel="icon" type="image/png" href="https://sjvggeiqczywnilrarml.supabase.co/storage/v1/object/public/cosmathic-files//icon_cosmathic-bg.png">
+    <title>Cosmathic</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="https://www.cosmathic.ai" class="nav-logo">
+                <img src="https://sjvggeiqczywnilrarml.supabase.co/storage/v1/object/public/cosmathic-files//logo_cosmathic_nobg6.png" alt="Cosmathic Logo" class="nav-logo-img">
+                <span>COSMATHIC</span>
+            </a>
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <i data-lucide="menu" class="nav-toggle-icon"></i>
+            </button>
+            <div class="nav-links">
+                <!-- <a href="#signup" class="nav-link">Start FREE Trial</a> -->
+                <a href="#indicators" class="nav-link">Products and Services</a>
+                <a href="#contact" class="nav-link">Contact Us</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="hero">
+        <section id = "home" class = "hero-content">
+            <div class="hero-content">
+                <img src="https://sjvggeiqczywnilrarml.supabase.co/storage/v1/object/public/cosmathic-files//logo_cosmathic_nobg6.png" alt="Cosmathic Logo" class="hero-logo">
+                <h1>COSMATHIC</h1>
+                <div class="subtitle-container">
+                    <p class="subtitle">Unlock Consistent Trading Wins</p>
+                </div>
+                <!--<a href="#signup" class="hero-cta">Start Your 15-Day FREE Trial Now!</a>-->
+                <a href="#indicators" class="hero-cta">View Products & Pricing Plans</a>
+            </div>
+            <div class="scroll-indicator">
+                <i data-lucide="chevron-down" class="scroll-icon"></i>
+                <span>Scroll to explore</span>
+            </div>
+        </section>
+    </div>
+    <div class="container">
+        <div class="value-props">
+            <div class="prop">
+                <div class="prop-header">
+                    <div class="icon">
+                        <i data-lucide="trending-up" class="value-icon"></i>
+                    </div>
+                    <h3>Consistent Win Rate</h3>
+                </div>
+                <p>Premium Tools & Add-ons designed for consistent profitability</p>
+            </div>
+            <div class="prop">
+                <div class="prop-header">
+                    <div class="icon">
+                        <i data-lucide="heart" class="value-icon"></i>
+                    </div>
+                    <h3>Intuitive & Configurable</h3>
+                </div>
+                <p>Perfect for both beginners and experienced traders</p>
+            </div>
+            <div class="prop">
+                <div class="prop-header">
+                    <div class="icon">
+                        <i data-lucide="users" class="value-icon"></i>
+                    </div>
+                    <h3>Community Support</h3>
+                    <span class="coming-soon-tag">Coming Soon!</span>
+                </div>
+                <p>Join our growing community of successful traders</p>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="popup-overlay" id="customPopup">
+            <div class="popup">
+                <button class="popup-close" aria-label="Close popup">
+                    <i data-lucide="x" class="popup-close-icon"></i>
+                </button>
+                <h3 class="popup-title">Thank You!</h3>
+                <p class="popup-message">We've received your request. Please check your email within 24 hours for activation instructions.</p>
+                <button class="popup-button" id="popupCloseBtn">Got it!</button>
+            </div>
+        </div>
+        <section id = "indicators" class="indicators">
+            <h2>Premium Tools & Indicators</h2>
+            
+            <p class="tradingview-note">* A TradingView account is required to use these tools and indicators. <a href="https://www.tradingview.com/desktop/?share_your_love=cosmathic" target="_blank">Don't have one? Sign up here.</a>
+            </p>
+            <div class="indicator-grid">
+                <!-- Product cards will be dynamically loaded here by script.js -->
+            </div>
+        </section>
+
+        <div class="cta-section-center" style="display:none">
+            <a href="#contact" class="cta-button">
+                Have Questions? Contact Us!
+            </a>
+        </div>
+        
+       <!-- <p class="trust-badge">Network & learn from a community of like-minded traders using these tools, by activating your FREE Trial!</p> -->
+
+        <!-- <p class="contact-us">For queries, contact us at <a href="mailto:support@cosmathic.ai">admin@cosmathic.ai</a></p> -->
+        
+        <!-- FREE TRIAL SIGNUP FORM GOES HERE -->
+        <section id="signup" class="signup">
+            <div class="signup-box" style="display: none;">
+                <h2>Start Your 15-Day Free Trial</h2>
+                <form id="signupForm">
+                    <div class="form-group">
+                        <label for="name">Your Name *</label>
+                        <input type="text" id="name" required placeholder="Your Full Name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" required placeholder="your@email.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">
+                            Phone Number
+                            <span class="recommended-badge">Recommended</span>
+                        </label>
+                        
+                        <div class="phone-input-group">
+                            <select id="phoneCountryCode">
+                                <option value="+91">+91 (India)</option>
+                                <option value="+1">+1 (USA/Canada)</option>
+                                <option value="+44">+44 (UK)</option>
+                                <option value="+61">+61 (Australia)</option>
+                                <option value="+49">+49 (Germany)</option>
+                                <option value="+33">+33 (France)</option>
+                                <option value="+81">+81 (Japan)</option>
+                                <option value="+86">+86 (China)</option>
+                                <option value="+55">+55 (Brazil)</option>
+                                <option value="+62">+62 (Indonesia)</option>
+                                <option value="+65">+65 (Singapore)</option>
+                                <option value="+971">+971 (UAE)</option>
+                                <option value="+27">+27 (South Africa)</option>
+                                <option value="+34">+34 (Spain)</option>
+                                <option value="+39">+39 (Italy)</option>
+                                <option value="+7">+7 (Russia)</option>
+                                <option value="+52">+52 (Mexico)</option>
+                                <option value="+90">+90 (Turkey)</option>
+                                <option value="+82">+82 (South Korea)</option>
+                                <option value="+60">+60 (Malaysia)</option>
+                            </select>
+                            <input type="tel" id="phone" placeholder="Your Phone Number" maxlength="10" inputmode="numeric" pattern="[0-9]*">
+                        </div>
+                        <div class="phone-benefits">
+                            <div class="benefit-item">
+                                <i data-lucide="zap" class="benefit-icon"></i>
+                                <span>Priority support with faster query resolution</span>
+                            </div>
+                            <div class="benefit-item">
+                                <i data-lucide="bell" class="benefit-icon"></i>
+                                <span>Instant updates about new features</span>
+                            </div>
+                            <div class="benefit-item">
+                                <i data-lucide="messages-square" class="benefit-icon"></i>
+                                <span>Direct communication channel for help</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="tradingview">TradingView Username *</label>
+                        <input type="text" id="tradingview" required placeholder="Your TradingView username">
+                    </div>
+                    <div class="form-group">
+                        <label for="referral">Referral Code</label>
+                        <input type="text" id="referral" placeholder="(Optional) Enter referral code">
+                    </div>
+                    <button type="submit" class="cta-button">Activate FREE Trial Now!</button>
+                </form>
+            </div>
+        </section>
+    </div>
+
+    <!-- contact social media section -->
+    <section id = "contact" section class="contact-section">
+        <div class="container">
+            <h2>Connect With Us</h2>
+            <div class="contact-grid">
+                <a href="tel:+919876543210" class="contact-item">
+                    <i data-lucide="phone" class="contact-icon"></i>
+                    <span>+91 84 3141 3300</span>
+                </a>
+                <a href="mailto:admin@cosmathic.ai" class="contact-item">
+                    <i data-lucide="mail" class="contact-icon"></i>
+                    <span>admin@cosmathic.ai</span>
+                </a>
+                <a href="https://t.me/CosMathicAI" target="_blank" class="contact-item">
+                    <i data-lucide="send" class="contact-icon"></i>
+                    <span>Join Telegram Channel</span>
+                </a>
+                <a href="https://wa.me/918431413300" target="_blank" class="contact-item">
+                    <i data-lucide="message-circle" class="contact-icon"></i>
+                    <span>WhatsApp Chat Support</span>
+                </a>
+                <a href="https://www.x.com/cosmathic/" target="_blank" class="contact-item">
+                    <i data-lucide="twitter" class="contact-icon"></i>
+                    <span>Follow us on X</span>
+                </a>
+                <a href="https://www.instagram.com/cosmathic.ai/" target="_blank" class="contact-item">
+                    <i data-lucide="instagram" class="contact-icon"></i>
+                    <span>Follow us on Instagram</span>
+                </a>
+                <a href="https://www.facebook.com/cosmathic/" target="_blank" class="contact-item">
+                    <i data-lucide="facebook" class="contact-icon"></i>
+                    <span>Follow us on FB</span>
+                </a>
+                <a href="https://www.linkedin.com/company/cosmathicai/" target="_blank" class="contact-item">
+                    <i data-lucide="linkedin" class="contact-icon"></i>
+                    <span>Follow us on LinkedIn</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+<!-- Disclaimer and Copyright -->
+
+    <footer class="footer">
+        <div class="container">
+            <div class="disclaimer">
+                <p><b>DISCLAIMER: </b> While our tools are designed to assist traders, no tool or system can guarantee accurate market predictions or ensure profitability. Trading carries risks, and past performance does not ensure future results. Our software provides tools to help users gain insights on chart metrics and assist in decision-making, but they do not constitute financial advice. Users are responsible for their own research and investment decisions.</p>
+            </div>
+            <div class="copyright">
+                <p>© 2025 Ensatus Technology Consultants</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal -->
+    <div class="modal" id="imageModal">
+        <div class="modal-content">
+            <button class="close-button" aria-label="Close modal"></button>
+            <img src="" alt="" id="modalImage">
+        </div>
+    </div>
+
+<!-- START - Paid Subscription Modal-->
+    <!-- Subscription Modal -->
+    <div class="modal" id="subscriptionModal">
+        <div class="modal-content subscription-modal-content">
+            <button class="close-button" aria-label="Close subscription modal"></button>
+            <h2 id="subscriptionProductName"></h2>
+            <p id="subscriptionProductDesc"></p>
+
+            <p class="first-subscription-info">First subscription includes an additional 15 days!</p>
+
+            <!-- Step 1: Plan Selection -->
+            <div id="planSelectionStep" class="subscription-step">
+                <div class="subscription-plans-container">
+                    <h3>Choose Your Plan</h3>
+                    <div id="plansList" class="plans-list">
+                        <!-- Plans will be dynamically loaded here -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 2: Checkout Details and Payment -->
+            <div id="checkoutDetailsStep" class="subscription-step" style="display: none;">
+                <button id="backToPlansBtn" class="back-button">
+                    <i data-lucide="arrow-left" class="button-icon"></i> Back to Plans
+                </button>
+                <h3>Your Details & Payment</h3>
+                <form id="modalSignupForm">
+                    <div class="form-group">
+                        <label for="modalName">Your Name *</label>
+                        <input type="text" id="modalName" required placeholder="Your Full Name">
+                    </div>
+                    <div class="form-group">
+                        <label for="modalEmail">Email Address *</label>
+                        <input type="email" id="modalEmail" required placeholder="your@email.com">
+                    </div>
+                    <div class="form-group">
+                        <!-- <label for="modalPhone"> Phone Number *</label>
+                        <input type="tel" id="modalPhone" required placeholder="+1 (234) 567-8900"> -->
+
+                                        <div class="form-group">
+                    <label for="modalPhone"> Phone Number *</label>
+                    <div class="phone-input-group">
+                        <select id="modalPhoneCountryCode">
+                            <option value="+91">+91 (India)</option>
+                            <option value="+1">+1 (USA/Canada)</option>
+                            <option value="+44">+44 (UK)</option>
+                            <option value="+61">+61 (Australia)</option>
+                            <option value="+49">+49 (Germany)</option>
+                            <option value="+33">+33 (France)</option>
+                            <option value="+81">+81 (Japan)</option>
+                            <option value="+86">+86 (China)</option>
+                            <option value="+55">+55 (Brazil)</option>
+                            <option value="+62">+62 (Indonesia)</option>
+                            <option value="+65">+65 (Singapore)</option>
+                            <option value="+971">+971 (UAE)</option>
+                            <option value="+27">+27 (South Africa)</option>
+                            <option value="+34">+34 (Spain)</option>
+                            <option value="+39">+39 (Italy)</option>
+                            <option value="+7">+7 (Russia)</option>
+                            <option value="+52">+52 (Mexico)</option>
+                            <option value="+90">+90 (Turkey)</option>
+                            <option value="+82">+82 (South Korea)</option>
+                            <option value="+60">+60 (Malaysia)</option>
+                        </select>
+                        <input type="tel" id="modalPhone" required placeholder="Your Phone Number" maxlength="10" inputmode="numeric" pattern="[0-9]*">
+                    </div>
+
+                    </div>
+                    <div class="form-group">
+                        <label for="modalTradingview">TradingView Username *</label>
+                        <input type="text" id="modalTradingview" required placeholder="Your TradingView username">
+                    </div>
+                    <div class="form-group">
+                        <label for="modalReferral">Referral Code <span class="discount-badge">Additional 20% Discount!</span></label>
+                        <input type="text" id="modalReferral" placeholder="Enter referral code (optional)">
+                    </div>
+                </form>
+<button id="proceedToPaymentBtn" class="cta-button" disabled>Proceed to Payment</button>
+                <div id="paymentDetails" class="payment-details" style="display: none;">
+                    <h3>Payment Summary</h3>
+                    <div class="summary-item">
+                        <span>Selected Plan:</span>
+                        <span id="summaryPlan"></span>
+                    </div>
+                    <div class="summary-item">
+                        <span>Base Price:</span>
+                        <span id="summaryBasePrice"></span>
+                    </div>
+                    <div class="summary-item" id="introDiscountRow">
+                        <span>Introductory Discount:</span>
+                        <span id="summaryIntroDiscount"></span>
+                    </div>
+                    <div class="summary-item" id="referralDiscountRow">
+                        <span>Referral Discount:</span>
+                        <span id="summaryReferralDiscount"></span>
+                    </div>
+                    <div class="summary-item total-price">
+                        <!-- <span>Total (incl. GST):</span> -->
+                        <span>Total:</span>
+                        <span id="summaryTotalPrice"></span>
+                    </div>
+                  <!-- <h3>Select Payment Method</h3> -->
+                <div id="paymentOptions" class="payment-options" style="display:none">
+                    Payment options will be dynamically loaded here
+                </div>
+
+                <div id="upiPaymentSection" class="upi-payment-section" style="display: none;">
+                    <div class="upi-id-display hidden">
+                      UPI ID: <span id="upiIdText"></span>
+                    </div>
+                    <p class="upi-instruction">Scan the QR code below to complete your payment.</p>
+                    <img id="upiQrCode" src="" alt="UPI QR Code" class="upi-qr-code">
+                    <p class="upi-amount-display">Amount to Pay: <span id="upiAmount"></span></p>
+                    <p class="upi-instruction-text">
+                        After successful payment, please share your payment confirmation screenshot via WhatsApp.
+                        Include your Name, Email, Phone Number, Transaction ID, and TradingView ID in the message for quick activation.
+                    </p>
+                    <div class="share-buttons">
+                        <button id="shareWhatsapp" class="share-button whatsapp-button">
+                            <i data-lucide="message-circle" class="button-icon"></i> Share Payment Confirmation
+                        </button>
+                        <button id="shareEmail" class="share-button email-button" style="display:none">
+                            <i data-lucide="mail" class="button-icon"></i> Share via Email
+                        </button> <!-- Hide Share via Email button -->
+                    </div>
+                </div>
+                  
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- END - Paid Subscription Modal -->
+
+<!-- Add popup markup -->
+<!-- <div class="popup-overlay" id="customPopup">
+    <div class="popup">
+        <button class="popup-close" aria-label="Close popup">
+            <i data-lucide="x" class="popup-close-icon"></i>
+        </button>
+        <h3 class="popup-title">Thank You!</h3>
+        <p class="popup-message">We've received your request. Please check your email within 24 hours for activation instructions.</p>
+        <button class="popup-button" id="popupCloseBtn">Got it!</button>
+    </div>
+</div> -->
+
+    <script type="module" src="script.js"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
