@@ -161,12 +161,34 @@ closeImageModalButton.addEventListener('click', (e) => {
     e.stopPropagation();
     imageModal.classList.remove('active');
   });
-  
+
   imageModal.addEventListener('click', (e) => {
     if (e.target === imageModal) {
       imageModal.classList.remove('active');
     }
   });
+
+// About Us Modal functionality
+const aboutUsModal = document.getElementById('aboutUsModal');
+const aboutUsLink = document.getElementById('aboutUsLink');
+const closeAboutUsModalButton = aboutUsModal.querySelector('.close-button');
+
+aboutUsLink.addEventListener('click', (e) => {
+    e.preventDefault();
+    aboutUsModal.classList.add('active');
+    navLinks.classList.remove('active');
+});
+
+closeAboutUsModalButton.addEventListener('click', (e) => {
+    e.stopPropagation();
+    aboutUsModal.classList.remove('active');
+});
+
+aboutUsModal.addEventListener('click', (e) => {
+    if (e.target === aboutUsModal) {
+        aboutUsModal.classList.remove('active');
+    }
+});
 
 // OLD Popup functionality BEGINS HERE
 /*const popup = document.getElementById('customPopup');
