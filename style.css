@@ -997,6 +997,86 @@ h2 {
     transform: rotate(-45deg);
 }
 
+.testimonials-section {
+    padding: 60px 0;
+    background: rgba(255, 255, 255, 0.02);
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.testimonials-carousel {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    gap: 20px;
+    padding-bottom: 10px;
+    -webkit-scrollbar: none;
+    scrollbar-width: none;
+}
+
+.testimonials-carousel::-webkit-scrollbar {
+    display: none;
+}
+
+.testimonials-carousel::-webkit-scrollbar-track {
+    display: none;
+}
+
+.testimonials-carousel::-webkit-scrollbar-thumb {
+    display: none;
+}
+
+.testimonial-card-carousel {
+    flex: 0 0 calc(20% - 16px);
+    min-width: 250px;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 25px;
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.testimonial-card-carousel:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px rgba(199, 161, 255, 0.2);
+}
+
+.testimonial-card-carousel blockquote {
+    margin: 0 0 20px 0;
+}
+
+.testimonial-card-carousel blockquote p {
+    font-style: italic;
+    margin: 0 0 15px 0;
+    color: #ffffff;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.testimonial-card-carousel blockquote footer {
+    font-weight: 600;
+    color: #e1e1e1;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.testimonial-name {
+    background: linear-gradient(135deg, #c7a1ff 0%, #00d4ff 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 700;
+}
+
+.testimonial-experience {
+    display: block;
+    font-size: 0.85rem;
+    color: #bbb;
+    margin-top: 8px;
+    font-weight: 400;
+}
+
 .testimonial-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -1155,7 +1235,23 @@ select:disabled {
     transform: none; /* Remove hover effect when disabled */
 }
 
+@media (max-width: 1200px) {
+    .testimonial-card-carousel {
+        flex: 0 0 calc(33.33% - 16px);
+    }
+}
+
 @media (max-width: 768px) {
+    .testimonial-card-carousel {
+        flex: 0 0 calc(50% - 10px);
+        min-width: 180px;
+        padding: 20px;
+    }
+
+    .testimonials-section {
+        padding: 40px 0;
+    }
+
     h1 {
         font-size: 2.5rem;
     }

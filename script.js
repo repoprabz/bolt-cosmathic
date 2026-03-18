@@ -4,6 +4,56 @@ import { nanoid } from 'https://cdn.jsdelivr.net/npm/nanoid/nanoid.js';
 // Configuration
 const CONFIG = {
     REFERRAL_CODE_LENGTH: 6,
+    TESTIMONIALS: [
+        {
+            id: 'testimonial_1',
+            name: 'Amit Kumar',
+            experience: '5+ years trading experience',
+            quote: "The Rhythmus Intraday indicator has transformed my trading. Clear signals, consistent wins, and the structured entry zones have made all the difference."
+        },
+        {
+            id: 'testimonial_2',
+            name: 'Priya Sharma',
+            experience: 'Active swing trader',
+            quote: "I was struggling with entry timing until I found Cosmathic. The price-time synchronization is incredibly accurate. Highly recommended!"
+        },
+        {
+            id: 'testimonial_3',
+            name: 'Rajesh Patel',
+            experience: '3+ years retail trader',
+            quote: "The cosmic mathematics approach seems unconventional at first, but the results speak for themselves. My win rate has improved significantly."
+        },
+        {
+            id: 'testimonial_4',
+            name: 'Deepak Verma',
+            experience: 'Professional trader',
+            quote: "Finally, a tool that combines discipline with precision. The Cosmic Axis Grid has become an essential part of my daily trading routine."
+        },
+        {
+            id: 'testimonial_5',
+            name: 'Neha Gupta',
+            experience: '2+ years trading',
+            quote: "The weekly swing indicator predictions are remarkable. I have never seen such consistency. This is the real deal for swing traders."
+        },
+        {
+            id: 'testimonial_6',
+            name: 'Vikram Singh',
+            experience: 'Day trader',
+            quote: "The vibration levels provided by Rhythmus are spot-on for intraday trading. My profit factor has nearly doubled since using this tool."
+        },
+        {
+            id: 'testimonial_7',
+            name: 'Anjali Desai',
+            experience: '6+ years experience',
+            quote: "What sets Cosmathic apart is the clarity and structure. No more confusion, just objective rules and disciplined execution. Worth every penny!"
+        },
+        {
+            id: 'testimonial_8',
+            name: 'Sanjay Nair',
+            experience: 'Active market operator',
+            quote: "The leading indicators actually lead. The preparation with clarity approach has completely changed how I approach market timing."
+        }
+    ],
        //for email attaching
     PDF_GUIDES: {
       MATH_TOOL: '',//file name of guide PDF
@@ -495,6 +545,32 @@ if (modalReferralInput)
   if (modalPhoneInput) {
     modalPhoneInput.addEventListener('input', filterNumericInput);
   }
+
+// Function to render testimonials
+function renderTestimonials() {
+  const testimonialsCarousel = document.getElementById('testimonialsCarousel');
+  if (!testimonialsCarousel) return;
+
+  testimonialsCarousel.innerHTML = '';
+
+  CONFIG.TESTIMONIALS.forEach((testimonial) => {
+    const card = document.createElement('div');
+    card.className = 'testimonial-card-carousel';
+    card.setAttribute('data-testimonial-id', testimonial.id);
+
+    card.innerHTML = `
+        <blockquote>
+            <p>"${testimonial.quote}"</p>
+            <footer>
+                <span class="testimonial-name">${testimonial.name}</span>
+            </footer>
+            <span class="testimonial-experience">${testimonial.experience}</span>
+        </blockquote>
+    `;
+
+    testimonialsCarousel.appendChild(card);
+  });
+}
 
 // Function to render product cards
 function renderProductCards() {
@@ -1581,6 +1657,7 @@ subtitleInterval = setInterval(updateSubtitle, 4000);
 // Initialize Lucide icons after the DOM is loaded
 document.addEventListener('DOMContentLoaded', () => {
     lucide.createIcons();
+    renderTestimonials();
     renderProductCards();
     setupProductCardObservation();
 });
